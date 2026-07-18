@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A modern digital clock with theme and time format controls." />
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="clock-card" aria-labelledby="clock-title">
+        <div class="card-topline">
+          <p class="eyebrow">LIVE TIME</p>
+          <span class="status"><i></i> SYNCHRONIZED</span>
+        </div>
+
+        <div class="clock-heading">
+          <span class="clock-icon" aria-hidden="true">◷</span>
+          <h1 id="clock-title">Digital Clock</h1>
+        </div>
+
+        <p class="greeting" id="greeting" aria-live="polite"></p>
+
+        <div class="time-row" aria-label="Current time">
+          <time id="time">00:00:00</time>
+          <span class="period" id="period" aria-live="polite">AM</span>
+        </div>
+
+        <div class="date-block">
+          <p id="day">Monday</p>
+          <p id="date">1 January 2026</p>
+        </div>
+
+        <div class="controls" aria-label="Clock controls">
+          <button class="control-button" id="format-toggle" type="button" aria-label="Switch to 24-hour time">
+            <span aria-hidden="true">◴</span>
+            <span id="format-label">24-hour</span>
+          </button>
+          <button class="control-button" id="theme-toggle" type="button" aria-label="Enable dark mode">
+            <span id="theme-icon" aria-hidden="true">☾</span>
+            <span id="theme-label">Dark mode</span>
+          </button>
+          <button class="control-button icon-button" id="fullscreen-toggle" type="button" aria-label="Enter fullscreen mode" title="Fullscreen">
+            <span aria-hidden="true">⛶</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
