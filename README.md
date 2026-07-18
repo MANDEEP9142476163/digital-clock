@@ -74,9 +74,3 @@ In the future, I plan to add:
 ## 👨‍💻 Author
 
 **Mandeep Kumar Singh**
-
-<<<<<<< HEAD
-This project is part of my JavaScript learning journey.
-=======
-This project is part of my JavaScript learning journey.
->>>>>>> a032d0b0b9a8f6d53309d9e337ff2dca5c05f1df
